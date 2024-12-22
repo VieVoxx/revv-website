@@ -13,6 +13,12 @@ html {
     width: 100%;
 }
 
+body {
+    display: grid;
+    grid-template: "header"
+                    "main"
+                    "footer";
+}
 /* Header */
 
 header {
