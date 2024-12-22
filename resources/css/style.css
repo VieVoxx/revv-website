@@ -1,0 +1,757 @@
+/* 
+
+Fonts:
+
+"Climate Crisis"
+Poppins
+"Sue Ellen Francisco"
+ 
+*/
+html {
+    font-size: 16px;
+    background-color: #FFF8E1;
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    background-color: #FBC02D;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    color: #FFF8E1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Climate Crisis";
+    font-size: 3.5rem;
+    padding-left: 3rem;
+    align-self: center;
+}
+
+.left a {
+    color: #FFF8E1;
+    font-family: Poppins;
+}
+
+.left a:hover {
+    color: #FF7043;
+    font-weight: bold;
+}
+
+.left {
+    position: relative;
+    left: -28rem;
+    font-size: 1.4rem;
+    display: flex;
+}
+
+.left ul{
+    display: flex; 
+    justify-content: space-between;
+}
+
+nav .mobile {
+    display: none;
+}
+
+.left a {
+    display: flex;
+    align-content: center;
+    padding-right: 1em;
+}
+
+.right {
+    display: flex;
+    width: 8%;
+}
+
+.right a {
+    display: flex;
+    align-content: center;
+    padding: 1.5em;
+}
+
+
+.right a:hover {
+    background-color: #FF7043;
+}
+
+.right img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1680px) {
+    .left {
+        position: relative;
+        left: -12rem;
+    }
+
+    .right {
+        width: 12%;
+    }
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1280px) {
+    .logo {
+        font-size: 2.8rem;
+    }
+
+    .left {
+        position: relative;
+        left: -7rem;
+    }
+
+    .right {
+        width: 15%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px){
+    html {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 2.4rem;
+    }
+
+    .left {
+        position: relative;
+        left: -5rem;    
+    }
+
+    .right {
+        width: 12%;
+    }
+
+    .right a {
+        padding: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    html {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .left {
+        position: relative;
+        left: 0;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        width: 12%;
+    }
+
+    .left img {
+        width: 100%;
+        padding: .5rem;
+    }
+
+    .right {
+        width: 16%;
+    }
+
+    .right a {
+        padding: .8rem;
+    }
+}
+
+/* Main */
+main {
+    position: relative;
+    display: grid;
+    top: 1em;
+    grid-template: "hero"
+                    "product"
+                    "featured"
+                    "testimonials"
+                    "community"
+                    "team";
+}
+
+main img {
+    width: 100%;
+}
+
+main h2 {
+    font-family: "Climate Crisis";
+    font-size: 3rem;
+    color: #00796B;
+    text-align: center;
+    margin: 2rem;
+}
+
+main .product, .featured, .testimonials, .community, .team {
+    font-family: "Climate Crisis";
+    padding: 1rem 2rem;
+}
+
+main .product h3, .featured h3, .testimonials h3, .community h3, .team h3 {
+    font-family: Poppins;
+    font-size: 2rem;
+    margin: .5rem 0;
+}
+
+.container {
+    width: 100%;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1280px) {
+    main h2 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        margin: 1.5rem 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px){
+    main h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        margin: .8rem 0;
+    }
+
+    main .product, .featured, .testimonials, .community, .team {
+        padding: .6rem 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    main h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+    main .product, .featured, .testimonials, .community, .team {
+        padding: .6rem 1rem;
+    }
+
+    main img {
+        width: 150%;
+    }
+
+}
+/* Hero Section */
+
+.hero {
+    background-image: url("../images/Hero02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: #FBC02D;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .container {
+    background-color: #00796B50;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+}
+
+.hero h1 {
+    font-family: "Climate Crisis";
+    font-size: 3.5rem;
+    line-height: 1.5;
+    text-shadow: .6rem .4rem #FF7043;
+}
+
+.hero h3 {
+    font-family: Poppins;
+    font-size: 1.6rem;
+    color: #FFF8E1;
+    margin-top: 15%;
+}
+
+.hero .cta {
+    background-color: #FF7043;
+    border: none;
+    color: #FFF8E1;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding: .5rem;
+    width: 15%;
+}
+
+.hero .cta:hover {
+    background-color: #FFF8E1;
+    color: #FBC02D;
+    font-weight: bold;
+    box-shadow: 0 1rem #FF7043;
+}
+
+.hero .cta:active {
+    color: #FF7043;
+    box-shadow: none;
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1280px) {
+    .hero h1 {
+        font-family: "Climate Crisis";
+        font-size: 3rem;
+        line-height: 1.5;
+        text-shadow: .2rem .3rem #FF7043;
+    }
+    
+    .hero h3 {
+        font-family: Poppins;
+        font-size: 1.2rem;
+        margin-top: 6rem;
+    }
+    
+    .hero .cta {
+        background-color: #FF7043;
+        color: #FFF8E1;
+        font-family: Poppins;
+        font-size: .8rem;
+        margin-top: 1.5rem;
+        padding: .4rem;
+        width: 15%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px){   
+    .hero .container {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-family: "Climate Crisis";
+        font-size: 3rem;
+        line-height: 1.5;
+        text-shadow: .2rem .3rem #FF7043;
+    }
+    
+    .hero h3 {
+        font-family: Poppins;
+        font-size: 1.2rem;
+        margin-top: 6rem;
+    }
+    
+    .hero .cta {
+        background-color: #FF7043;
+        color: #FFF8E1;
+        font-family: Poppins;
+        font-size: .8rem;
+        margin-top: 1.5rem;
+        padding: .4rem;
+        width: 15%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .hero .container {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-family: "Climate Crisis";
+        font-size: 1.8rem;
+        line-height: 1.5;
+        text-shadow: .1rem .2rem #FF7043;
+    }
+    
+    .hero h3 {
+        font-family: Poppins;
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+    
+    .hero .cta {
+        background-color: #FF7043;
+        color: #FFF8E1;
+        font-family: Poppins;
+        font-size: .8rem;
+        margin-top: 1rem;
+        padding: .4rem;
+        width: 15%;
+    }
+}
+/* Products Category */
+
+.product .container {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    font-family: Poppins;
+}
+
+.container .prd-card {
+    background-color: #FBC02D;
+    box-shadow: 1rem 1rem #FF7043;
+    color: #00796B;
+    font-weight: bolder;
+    width: 35%;
+    margin: 1rem 1.5rem;
+    padding: 1rem;
+}
+
+.prd-card div {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.product .cta {
+    background-color: #FFF8E1;
+    border: 1px solid #FF7043;
+    color: #FF7043;
+    font-family: Poppins;
+    font-size: 1rem;
+}
+
+.product .cta:hover {
+    background-color: #FF7043;
+    color: #FFF8E1;
+    box-shadow: 0 .3rem #00796B;
+}
+
+.product .cta:active {
+    background-color: #00796B;
+    border: 1px solid #FFF8E1;
+    color: #FFF8E1;
+    box-shadow: none;
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1280px) {
+    .container .prd-card {
+        width: 35%;
+        margin: -2rem 1rem;
+        margin-bottom: 4.5rem;
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px){
+    .product .container {
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .prd-card {
+        width: 65%;
+        margin: -2rem;
+        margin-bottom: 4.5rem;
+        padding: 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .product .container {
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .prd-card {
+        width: 65%;
+        margin: -2rem;
+        margin-bottom: 4.5rem;
+        padding: 1.5rem;
+    }
+}
+
+/* Featured */
+
+.featured .container {
+    font-family: Poppins;
+    display: flex;
+    justify-items: center;
+    padding: 2rem;
+    line-height: 2;
+}
+
+.container .feature-card {
+    background-color: #FBC02D;
+    box-shadow: 1rem 1rem #FF7043;
+    color: #00796B;
+    font-weight: bolder;
+    width: 35%;
+    margin: 1rem 1.5rem;
+    padding: 1rem;
+}
+
+.feature-card div {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.featured p {
+    font-family: "Sue Ellen Francisco";
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.featured h4 {
+    font-size: 1.5rem;
+}
+
+.featured .cta {
+    background-color: #FFF8E1;
+    border: 1px solid #FF7043;
+    color: #FF7043;
+    font-family: Poppins;
+    font-size: 1rem;
+}
+
+.featured .cta:hover {
+    background-color: #FF7043;
+    color: #FFF8E1;
+    box-shadow: 0 .3rem #00796B;
+}
+
+.featured .cta:active {
+    background-color: #00796B;
+    border: 1px solid #FFF8E1;
+    color: #FFF8E1;
+    box-shadow: none;
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1280px) {
+    .container .feature-card {
+        width: 35%;
+        margin: -2rem 1rem;
+        margin-bottom: 4.5rem;
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px){
+    .featured .container {
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .feature-card {
+        width: 65%;
+        margin: -2rem;
+        margin-bottom: 4.5rem;
+        padding: 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .featured .container {
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .feature-card {
+        width: 65%;
+        margin: -2rem;
+        margin-bottom: 4.5rem;
+        padding: 1.5rem;
+    }
+}
+
+/* Testimonials */
+
+.testimonials {
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    color: #FFF8E1;
+    background-color: #00796B;
+    margin: 2rem 0;
+}
+
+.testimonials div {
+    width: 70%;
+    margin: 6rem 2rem;
+    justify-self: center;
+}
+
+.testimonials div h5 {
+    font-family: Poppins;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.testimonials p {
+    color: #FBC02D;
+    font-family: "Sue Ellen Francisco";
+    font-size: 2.4rem; 
+}
+
+.entry {
+    font-family: "Sue Ellen Francisco";
+    font-size: 2rem;  
+}
+/* Commmunity */
+
+.community {
+    color: #00796B;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.5rem;
+}
+
+.community .cta {
+    font-family: Poppins;
+    font-size: 1rem;
+    background-color: #FFF8E1;
+    border: 2px solid #FF7043;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+.community fb {
+    margin: 1rem;
+}
+
+.community .cta a {
+    color: #FF7043;
+}
+/* Team */
+
+.team .container {
+    display: flex;
+}
+
+.profile {
+    background-color: #FBC02D;
+    box-shadow: 1rem 1rem #FF7043;
+    color: #00796B;
+    font-weight: bolder;
+    width: 20%;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    min-height: 300px;
+}
+
+.profile div {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.profile h4 {
+    font-family: Poppins;
+}
+
+@media only screen and (min-width: 1280px) {
+    .container .profile {
+        width: 35%;
+        margin: 1rem 1rem;
+        margin-bottom: 4.5rem;
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1280px) {
+    .container .profile {
+        width: 35%;
+        margin: 1rem 1rem;
+        margin-bottom: 4.5rem;
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px){
+    .team .container {
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .profile {
+        width: 35%;
+        margin: -2rem 1rem;
+        margin-bottom: 3.5rem;
+        padding: 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .team .container {
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .profile {
+        width: 35%;
+        margin: -2rem 1rem;
+        margin-bottom: 3.5rem;
+        padding: 1.5rem;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: #FBC02D;
+    width: 100%;
+    font-family: Poppins;
+    color: #FFF8E1;
+    padding: 1rem 3rem;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 8%;
+}
+
+.social li {
+    margin: 0 .5rem;
+}
+
+.social img {
+    width: 100%;
+}
