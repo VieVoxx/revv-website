@@ -177,6 +177,43 @@ nav .mobile {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .left {
+        position: relative;
+        left: 0;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        width: 12%;
+    }
+
+    .left img {
+        width: 100%;
+        padding: .5rem;
+    }
+
+    .right {
+        width: 16%;
+    }
+
+    .right a {
+        padding: .8rem;
+    }
+}
+
 /* Main */
 main {
     position: relative;
@@ -245,6 +282,25 @@ main .product h3, .featured h3, .testimonials h3, .community h3, .team h3 {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
+    main h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+    main .product, .featured, .testimonials, .community, .team {
+        padding: .6rem 1rem;
+    }
+
+    main img {
+        width: 150%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
     main h2 {
         font-size: 1.8rem;
     }
@@ -402,6 +458,35 @@ main .product h3, .featured h3, .testimonials h3, .community h3, .team h3 {
         width: 15%;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .hero .container {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-family: "Climate Crisis";
+        font-size: 1.8rem;
+        line-height: 1.5;
+        text-shadow: .1rem .2rem #FF7043;
+    }
+    
+    .hero h3 {
+        font-family: Poppins;
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+    
+    .hero .cta {
+        background-color: #FF7043;
+        color: #FFF8E1;
+        font-family: Poppins;
+        font-size: .8rem;
+        margin-top: 1rem;
+        padding: .4rem;
+        width: 15%;
+    }
+}
 /* Products Category */
 
 .product .container {
@@ -476,6 +561,22 @@ main .product h3, .featured h3, .testimonials h3, .community h3, .team h3 {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
+    .product .container {
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .prd-card {
+        width: 65%;
+        margin: -2rem;
+        margin-bottom: 4.5rem;
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
     .product .container {
         flex-direction: column;
         padding: 2rem;
@@ -576,6 +677,22 @@ main .product h3, .featured h3, .testimonials h3, .community h3, .team h3 {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
+    .featured .container {
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .feature-card {
+        width: 65%;
+        margin: -2rem;
+        margin-bottom: 4.5rem;
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
     .featured .container {
         flex-direction: column;
         padding: 2rem;
@@ -713,6 +830,21 @@ main .product h3, .featured h3, .testimonials h3, .community h3, .team h3 {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
+    .team .container {
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .profile {
+        width: 35%;
+        margin: -2rem 1rem;
+        margin-bottom: 3.5rem;
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
     .team .container {
         padding: 2rem;
         justify-content: center;
